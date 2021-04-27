@@ -1,0 +1,93 @@
+body {
+    margin: 100px;
+}
+h1 {
+    font-size: 70px;
+}
+h2  {
+    margin: 30px;
+    width: 700px;
+}
+img {
+    margin-right: 500px;
+    float: right;
+    width: 200px;
+}
+
+h3 {
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+table {
+    border: 1px solid grey;
+ }
+
+ th {
+    border: 1px solid grey;
+ }
+
+ td {
+    border: 1px solid grey;
+ }
+
+ button {
+     display: block;
+     margin: 0px auto;
+     border: none;
+     border-radius: 5px;
+     background-color: chartreuse;
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     padding: 10px 70px;
+     cursor: pointer;
+     
+ }
+
+ .block{
+     padding: 20px;
+ }
+
+ .block__item {
+     margin: 0px 0px 20px 0px;
+ }
+ .block__title {
+     position: relative;
+     padding: 0px 0px 0px 30px;
+     cursor: pointer;
+ }
+
+ .block__title:before,
+ .block__title:after {
+     content: '';
+     width: 10px ;
+     height: 1px;
+     background-color: #000;
+     position: absolute;
+     top: 8px;
+     transition: all 0.3s;
+ }
+ .block__title:before {
+     transform: rotate(40deg);
+     left: 0;
+ }
+ .block__title:after {
+     transform: rotate(-40deg);
+     left: 8px;
+ }
+
+ .block__title.active:before,
+ .block__title.active:after{
+     background-color: blue;
+ }
+ .block__title.active:before{
+    transform: rotate(-40deg);
+ }
+ .block__title.active:after{
+    transform: rotate(40deg);
+ }
+ .block__text {
+     display: none;
+     padding: 10px 0px 0px 0px;
+ }
